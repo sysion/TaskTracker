@@ -1,8 +1,13 @@
 import PropTypes from 'prop-types';
 
 const Button = ({ color, text, onClick })=>{ 	// destructing props
-	return(<button className='btn' style={{backgroundColor: color}} onClick={onClick}>{text}</button>);
-
+	return(
+		<button 
+			className='btn' 
+			style={{backgroundColor: color}} 
+			onClick={onClick}>{text}
+		</button>
+	);
 }
 
 Button.defaultProps = {
