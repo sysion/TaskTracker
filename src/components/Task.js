@@ -11,7 +11,7 @@ class Task extends React.Component{	// example class base Component
 			  <p>{day}</p>
 			  <div className='set-reminder'>
 				  <p>Set Reminder</p>
-				  
+
 				  <input 
 				  	type='checkbox' 
 				  	name='reminder' 
@@ -20,7 +20,6 @@ class Task extends React.Component{	// example class base Component
 				  />
 			  </div>
 			</section>
-
 		);
 	}
 }

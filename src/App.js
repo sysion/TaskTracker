@@ -4,6 +4,8 @@ import AppContent from './components/AppContent';
 import TaskList from './components/TaskList';
 import Footer from './components/Footer';
 import './App.css';
+import About from './components/About';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   const [tasklist, setTasks] = useState([
@@ -122,17 +124,33 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <Header />
-      <AppContent onToggleTaskForm={taskFormToggle} toggleButtonText={toggleTaskForm} />
-      <TaskList 
-        tasks={tasklist} 
-        onSaveTask={saveTask} 
-        onToggleReminder={toggleReminder} 
-        toggleTaskForm={toggleTaskForm} 
-      />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <AppContent onToggleTaskForm={taskFormToggle} toggleButtonText={toggleTaskForm} />
+        {/*<TaskList 
+          tasks={tasklist} 
+          onSaveTask={saveTask} 
+          onToggleReminder={toggleReminder} 
+          toggleTaskForm={toggleTaskForm} 
+        />*/}
+
+        <Routes>
+          <Route exact path='/' element={
+            <TaskList 
+              tasks={tasklist} 
+              onSaveTask={saveTask} 
+              onToggleReminder={toggleReminder} 
+              toggleTaskForm={toggleTaskForm} 
+            />
+          } 
+          /> 
+          <Route exact path='/about' element={<About />} /> 
+        </Routes>
+        
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

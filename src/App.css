@@ -111,7 +111,8 @@ header ul li a:hover{
 	min-height: 500px;
 }
 
-.tasklist{
+.tasklist,
+.page-content{
 	padding: 2rem;
 }
 
