@@ -6,16 +6,21 @@ class Task extends React.Component{	// example class base Component
 		const onChange = this.props.onChange;
 
 		return(
-			<section className='task' key={id}> 
+			<section className={`task ${reminder ? 'reminder' : ''}`} key={id}> 
 			  <h3>{text}</h3>
 			  <p>{day}</p>
-			  <input 
-			  	type='checkbox' 
-			  	name='reminder' 
-			  	checked={reminder}
-			  	onChange={onChange}
-			  />
+			  <div className='set-reminder'>
+				  <p>Set Reminder</p>
+				  
+				  <input 
+				  	type='checkbox' 
+				  	name='reminder' 
+				  	checked={reminder}
+				  	onChange={() => onChange(id)}
+				  />
+			  </div>
 			</section>
+
 		);
 	}
 }

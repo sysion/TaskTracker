@@ -5,7 +5,9 @@ const Button = ({ color, text, onClick })=>{ 	// destructing props
 		<button 
 			className='btn' 
 			style={{backgroundColor: color}} 
-			onClick={onClick}>{text}
+			onClick={onClick}
+		>
+			{text}
 		</button>
 	);
 }

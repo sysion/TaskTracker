@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import Button from './Button';
 
 
-const AppContent = ({ title, onClick }) => { 	// destructing props
+const AppContent = ({ title, onToggleTaskForm, toggleButtonText }) => { 	// destructing props
 	/*const clickHandler = (event)=>{
 		console.log('Hurray');
 	}*/
@@ -11,7 +11,11 @@ const AppContent = ({ title, onClick }) => { 	// destructing props
 		<div className='app-header'> 
 			<h1>{title}</h1>
 
-			<Button color='#6868fe' onClick={onClick} />
+			<Button 
+				color='#6868fe' 
+				onClick={onToggleTaskForm} 
+				text={toggleButtonText ? 'Close' : 'Add'} 
+			/>
 		</div>
 	);
 
@@ -23,7 +27,8 @@ AppContent.defaultProps = {
 
 AppContent.propTypes = {
 	title: PropTypes.string.isRequired,
-	onClick: PropTypes.func.isRequired,
+	onToggleTaskForm: PropTypes.func.isRequired,
+	toggleButtonText: PropTypes.bool.isRequired,
 }
 
 export default AppContent;
