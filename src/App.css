@@ -124,12 +124,20 @@ header ul li a:hover{
 	padding: 1rem 2rem;
 	margin-bottom: 1rem;
 	border-radius: 0.5rem;
+	position: relative;
+	cursor: pointer;
 }
+
+/*.task h3,
+.task p{
+	z-index: 2;
+}*/
 
 .task input[type='checkbox']{
 	width: 1.6rem;
 	height: 1.6rem;
 	margin-top: 0.25rem;
+	cursor: pointer;
 }
 
 .task .set-reminder{
@@ -142,6 +150,21 @@ header ul li a:hover{
 
 .task .set-reminder p{
 	margin-right: 1rem;
+}
+
+.task-icon{
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-top: 2rem;
+	margin-right: 2rem;
+}
+
+.task-icon img{
+	width: 2rem;
+	height: 2rem;
+	margin-bottom: 1rem;
+	cursor: pointer;
 }
 
 .task-form{
@@ -190,6 +213,24 @@ header ul li a:hover{
 	display: block;
 	background-color: #6868fe;
 	margin: 0.5rem auto;
+}
+
+input[name='task-text-edit'],
+input[name='task-date-edit']{
+	padding: 1rem;
+	border-radius: 0.5rem;
+	border: none;
+	outline: none;
+	font-size: 1.6rem;
+	width: 80%;
+	background-color: #cccccc;
+	color: white;
+	font-weight: 600;
+	margin-bottom: 0.4rem;
+}
+
+section.disabled{
+	pointer-events: none;
 }
 
 .footer{

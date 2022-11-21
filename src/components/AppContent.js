@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import Button from './Button';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 const AppContent = ({ title, onToggleTaskForm, toggleButtonText }) => { 	// destructing props
 	/*const clickHandler = (event)=>{
@@ -17,6 +17,7 @@ const AppContent = ({ title, onToggleTaskForm, toggleButtonText }) => { 	// dest
 				color='#6868fe' 
 				onClick={onToggleTaskForm} 
 				text={toggleButtonText ? 'Close' : 'Add'} 
+				onToggleButtonColor={toggleButtonText}
 			/>)}
 		</div>
 	);
