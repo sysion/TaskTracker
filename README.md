@@ -1,4 +1,4 @@
-# Tasks Tracker
+# Task Tracker
 
 Responsive react project to keep records of tasks and update them.
 
