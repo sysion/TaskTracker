@@ -63,7 +63,6 @@ function App() {
 
   // update changed task
   const updateTask = (delEditTask) => { 
-    const updTask = tasklist.filter(task => task.id === delEditTask.id);
     setTasks(tasklist.filter(task => task.id === delEditTask.id ? delEditTask : task));
   }
 
