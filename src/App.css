@@ -128,11 +128,6 @@ header ul li a:hover{
 	cursor: pointer;
 }
 
-/*.task h3,
-.task p{
-	z-index: 2;
-}*/
-
 .task input[type='checkbox']{
 	width: 1.6rem;
 	height: 1.6rem;
@@ -180,15 +175,6 @@ header ul li a:hover{
 	margin-bottom: 1rem;
 }
 
-/*.task-form form-group:nth-child(3){
-	background-color: red;
-}*/
-
-/*.task-form form-group label{
-	padding: 0.5rem;
-	width: 10rem;
-}*/
-
 .task-form form-group input[type='text']{
 	padding: 1rem;
 	border-radius: 0.5rem;
@@ -204,9 +190,6 @@ header ul li a:hover{
 .task-form form-group input[type='text']::placeholder{
 	color: white;
 }
-
-/*.task-form form-group input[type='checkbox']{
-}*/
 
 .task-form form-group button{
 	width: 15rem;

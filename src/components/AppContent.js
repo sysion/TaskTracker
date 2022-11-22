@@ -3,10 +3,6 @@ import Button from './Button';
 import { useLocation } from 'react-router-dom';
 
 const AppContent = ({ title, onToggleTaskForm, toggleButtonText }) => { 	// destructing props
-	/*const clickHandler = (event)=>{
-		console.log('Hurray');
-	}*/
-
 	const location = useLocation();
 
 	return (

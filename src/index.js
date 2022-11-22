@@ -9,12 +9,3 @@ root.render(
     <App />
   </React.StrictMode>
 );
-
-{/*/ this is no longer working
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-*/}
