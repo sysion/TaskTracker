@@ -1,7 +1,7 @@
 {
   "name": "task-tracker",
   "version": "0.1.0",
-  "homepage": "https://sysion.github.io/task-tracker",
+  "homepage": "https://sysion.github.io/TaskTracker",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
